@@ -1,0 +1,30 @@
+.nav {
+  padding: 55px 0;
+}
+
+.nav__title {
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  column-count: auto;
+  column-width: 220px;
+  column-gap: 30px;
+}
+
+.nav__item {
+  margin-bottom: 10px;
+}
+
+.nav__link {
+  color: transparentize($color-default-white, 0.3);
+}

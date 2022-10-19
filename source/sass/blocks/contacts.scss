@@ -1,0 +1,25 @@
+.contacts {
+  padding: 55px 0;
+}
+
+.contacts__title {
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.contacts__address {
+  margin-bottom: 10px;
+  font-style: normal;
+  color: transparentize($color-default-white, 0.3);
+}
+
+.contacts__phone {
+  display: block;
+  margin-bottom: 10px;
+  color: transparentize($color-default-white, 0.3);
+}
