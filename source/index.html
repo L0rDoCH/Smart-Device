@@ -10,22 +10,30 @@
 </head>
 <body>
 <div class="wrapper">
-  <header class="header">
-    <div class="container header__container">
+  <header>
+    <div class="container header">
       <a class="header__logo-link">
-        <img class="header__logo" src="/img/svg/logo.svg" alt="Логотип компании Smart Device">
+        <img class="header__logo-desktop" src="/img/svg/logo.svg" alt="Логотип компании Smart Device" width="215" height="55">
+        <img class="header__logo-mobile" src="/img/svg/logo-mobile.svg" alt="Логотип компании Smart Device" width="35" height="35">
       </a>
-      <div class="header__mail">
-        <img src="/img/sprite/icon-email.svg" alt="Email">
-        <address class="header__address">
-          <a href="mailto:info@sd.ru">info@sd.ru</a>
-        </address>
-      </div>
-      <div class="header__phone">
-        <address class="header__address">
-          <a href="tel:+74950005252">+7 (495) 000 52 52</a>
-        </address>
-      </div>
+      <ul class="header__contacts-list">
+        <li class="header__item">
+          <address class="header__address">
+            <a href="mailto:info@sd.ru">
+              <img src="/img/sprite/icon-email.svg" alt="Email" width="20" height="20">
+              <span>info@sd.ru</span>
+            </a>
+          </address>
+        </li>
+        <li class="header__item">
+          <address class="header__address">
+            <a href="tel:+74950005252">
+              <img src="/img/sprite/icon-phone.svg" alt="Телефон" width="20" height="20">
+              <span>+7 (495) 000 52 52</span>
+            </a>
+          </address>
+        </li>
+      </ul>
       <a class="btn header__btn" href="#">Заказать звонок</a>
     </div>
   </header>
