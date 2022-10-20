@@ -13,8 +13,7 @@
   <header>
     <div class="container header">
       <a class="header__logo-link">
-        <img class="header__logo-desktop" src="/img/svg/logo.svg" alt="Логотип компании Smart Device" width="215" height="55">
-        <img class="header__logo-mobile" src="/img/svg/logo-mobile.svg" alt="Логотип компании Smart Device" width="35" height="35">
+        <img class="header__logo" src="/img/svg/logo.svg" alt="Логотип компании Smart Device" width="215" height="55">
       </a>
       <ul class="header__contacts-list">
         <li class="header__item">
@@ -41,8 +40,9 @@
   <main>
     <h1 class="visually-hidden">Сайт компании Smart Device</h1>
     <section class="top-section container">
+      <img class="top-section__bg" src="/img/title-bg.jpg" alt="Изображение материнской платы" width="1920" height="880">
       <h2 class="top-section__title">Печатные платы</h2>
-      <p class="top-section__text">производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
+      <p class="top-section__text">производство и&nbsp;монтаж, поставка комплектующих, <br>блоков и&nbsp;модулей</p>
       <a class="btn top-section__btn" href="#feedback">Получить бесплатную консультацию</a>
     </section>
 
@@ -158,9 +158,9 @@
           </a>
         </div>
       </div>
-      <nav class="footer__nav nav">
-        <h2 class="nav__title">Разделы сайта</h2>
-        <ul class="nav__list">
+      <nav class="footer__nav nav accordion">
+        <h2 class="nav__title accordion__title">Разделы сайта</h2>
+        <ul class="nav__list accordion__content accordion__content--active">
           <li class="nav__item">
             <a class="nav__link" href="#">О&nbsp;Компании</a>
           </li>
@@ -184,12 +184,14 @@
           </li>
         </ul>
       </nav>
-      <div class="footer__contacts contacts">
-        <h2 class="contacts__title">Наш офис</h2>
-        <address class="contacts__address">г. Мытищи, Олимпийский проспект, д.10</address>
-        <a class="contacts__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
-        <a class="contacts__phone" href="tel:+79253895829">+7 (925) 389-58-29</a>
-        <a class="contacts__phone" href="tel:+79253647813">+7 (925) 364-78-13</a>
+      <div class="footer__contacts contacts accordion">
+        <h2 class="contacts__title accordion__title">Наш офис</h2>
+        <div class="contacts__wrapper accordion__content accordion__content--active">
+          <address class="contacts__address">г. Мытищи, Олимпийский проспект, д.10</address>
+          <a class="contacts__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
+          <a class="contacts__phone" href="tel:+79253895829">+7 (925) 389-58-29</a>
+          <a class="contacts__phone" href="tel:+79253647813">+7 (925) 364-78-13</a>
+        </div>
       </div>
     </div>
   </footer>
