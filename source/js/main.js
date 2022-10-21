@@ -1,7 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {accordionsStart} from './utils/accordion.js';
-import {changeTextOnMobile} from './utils/top-section-change-btn-text.js';
+import {accordionsStart} from './modules/accordion.js';
+import {changeTextOnMobile} from './modules/top-section-change-btn-text.js';
+import {aboutClose} from './modules/about-close.js';
 
 // ---------------------------------
 
@@ -13,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   accordionsStart();
   changeTextOnMobile();
+  aboutClose();
 
   // Modules
   // ---------------------------------
