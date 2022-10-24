@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {accordionsStart} from './modules/accordion.js';
-import {changeTextOnMobile} from './modules/top-section-change-btn-text.js';
+import {changeTextOnMobile} from './modules/change-text-on-mobile.js';
 import {aboutClose} from './modules/about-close.js';
 
 // ---------------------------------
