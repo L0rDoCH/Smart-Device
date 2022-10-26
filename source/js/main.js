@@ -3,7 +3,8 @@ import {initModals} from './modules/modals/init-modals';
 import {accordionsStart} from './modules/accordion.js';
 import {changeTextOnMobile} from './modules/change-text-on-mobile.js';
 import {aboutClose} from './modules/about-close.js';
-
+import {scrollToForm} from './modules/scroll-to-form.js';
+import {forms} from './modules/forms.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -15,6 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
   accordionsStart();
   changeTextOnMobile();
   aboutClose();
+  forms();
+  scrollToForm();
 
   // Modules
   // ---------------------------------

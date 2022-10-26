@@ -19,5 +19,4 @@ export const changeTextOnMobile = () => {
   };
   breakpoint.addListener(breakpointChecker);
   breakpointChecker();
-
 };
