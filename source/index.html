@@ -4,9 +4,18 @@
   <meta charset="UTF-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Описание проекта">
-  <title>ProjectName</title>
+  <meta name="description" content="Сайт компании Smart Device">
+  <title>Smart Device</title>
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="js/main.js" as="script" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml"> <!--svg-->
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
 
@@ -73,7 +82,7 @@
   <header>
     <div class="container header">
       <a class="header__logo-link">
-        <img class="header__logo" src="../img/svg/logo.svg" alt="Логотип компании Smart Device" width="215" height="55">
+        <img class="header__logo" src="../img/svg/logo.svg" alt="Логотип компании Smart Device" width="215" height="55" loading="lazy">
       </a>
       <ul class="header__contacts-list">
         <li class="header__item">
@@ -106,7 +115,7 @@
     <section class="top-section container">
       <picture>
         <source srcset="../img/title-bg.webp 1x, ../img/title-bg@2x.webp 2x" type="image/webp">
-        <img class="top-section__bg" src="../img/title-bg.jpg" srcset="../img/title-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1920" height="880">
+        <img class="top-section__bg" src="../img/title-bg.jpg" srcset="../img/title-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1920" height="880" loading="lazy">
       </picture>
       <h2 class="top-section__title">Печатные платы</h2>
       <p class="top-section__text">производство и&nbsp;монтаж, поставка комплектующих, <br>блоков и&nbsp;модулей</p>
@@ -153,7 +162,7 @@
     <section class="about container">
       <picture>
         <source srcset="../img/2022.webp 1x, ../img/2022@2x.webp 2x" type="image/webp">
-        <img src="../img/2022.png" srcset="../img/2022@2x.png 2x" alt="Надпись 2022" width="150" height="320">
+        <img src="../img/2022.png" srcset="../img/2022@2x.png 2x" alt="Надпись 2022" width="150" height="320" loading="lazy">
       </picture>
       <div class="about__wrapper">
         <h2 class="about__title">О&nbsp;компании</h2>
@@ -179,7 +188,7 @@
           <a href="#">
             <picture>
               <source srcset="../img/card-bg.webp 1x, ../img/card-bg@2x.webp 2x" type="image/webp">
-              <img src="../img/card-bg.jpg" srcset="../img/card-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1494" height="818">
+              <img src="../img/card-bg.jpg" srcset="../img/card-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1494" height="818" loading="lazy">
             </picture>
             <p>Производство печатных плат</p>
             <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -191,7 +200,7 @@
           <a href="#">
             <picture>
               <source srcset="../img/card-bg.webp 1x, ../img/card-bg@2x.webp 2x" type="image/webp">
-              <img src="../img/card-bg.jpg" srcset="../img/card-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1494" height="818">
+              <img src="../img/card-bg.jpg" srcset="../img/card-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1494" height="818" loading="lazy">
             </picture>
             <p>Монтаж печатных плат</p>
             <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -203,7 +212,7 @@
           <a href="#">
             <picture>
               <source srcset="../img/card-bg.webp 1x, ../img/card-bg@2x.webp 2x" type="image/webp">
-              <img src="../img/card-bg.jpg" srcset="../img/card-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1494" height="818">
+              <img src="../img/card-bg.jpg" srcset="../img/card-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1494" height="818" loading="lazy">
             </picture>
             <p>Комплектующие для светотехники</p>
             <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -216,7 +225,7 @@
     <section class="feedback container" id="feedback">
       <picture>
         <source srcset="../img/feedback-form-image-desktop.webp 1x, ../img/feedback-form-image-desktop@2x.webp 2x" type="image/webp">
-        <img class="feedback__image-desktop" src="../img/feedback-form-image-desktop.png" srcset="../img/feedback-form-image-desktop@2x.png 2x" alt="Изображение бумажного самолетика" width="510" height="285">
+        <img class="feedback__image-desktop" src="../img/feedback-form-image-desktop.png" srcset="../img/feedback-form-image-desktop@2x.png 2x" alt="Изображение бумажного самолетика" width="510" height="285" loading="lazy">
       </picture>
       <div class="feedback__wrapper">
         <h2 class="feedback__title">Остались вопросы? Задайте их&nbsp;нам!</h2>
@@ -257,7 +266,7 @@
     <div class="footer container">
       <div class="footer__logo-wrapper">
         <a class="footer__logo-link">
-          <img class="footer__logo" src="../img/svg/logo.svg" alt="Логотип компании Smart Device" width="215" height="55">
+          <img class="footer__logo" src="../img/svg/logo.svg" alt="Логотип компании Smart Device" width="215" height="55" loading="lazy">
         </a>
         <div class="footer__social social">
           <h2 class="visually-hidden">Социальные сети</h2>
