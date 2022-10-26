@@ -29,6 +29,7 @@
 
     @include vp-1023 {
       min-height: auto;
+      margin-bottom: 13px;
     }
   }
 }
@@ -62,6 +63,11 @@
   padding: 13px 15px;
   color: $color-deep-sky-blue;
   border-color: $color-deep-sky-blue;
+
+  @include vp-767 {
+    min-width: 160px;
+    padding: 8px 15px;
+  }
 
   &--active {
     display: block;
