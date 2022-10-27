@@ -190,38 +190,38 @@
 .modal__control {
   position: relative;
 
+  &:focus-within {
+    label {
+      outline: $color-black-pearl auto 1px;
+      outline-offset: 5px;
+    }
+  }
+
+  input:checked {
+    + span::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 4px;
+      width: 4px;
+      height: 6px;
+      border-right: 1px solid $color-default-white;
+      border-bottom: 1px solid $color-default-white;
+      transform: rotate(45deg);
+    }
+  }
+
+  input:disabled {
+    ~ span {
+      opacity: 0.5;
+      cursor: default;
+    }
+  }
+
   label {
     display: flex;
     align-items: center;
     cursor: pointer;
-
-    &:focus-within {
-      .modal__control-label {
-        outline: $color-black-pearl auto 1px;
-        outline-offset: 5px;
-      }
-    }
-
-    input:checked {
-      + .modal__control-mark::after {
-        content: "";
-        position: absolute;
-        top: 2px;
-        left: 4px;
-        width: 4px;
-        height: 6px;
-        border-right: 1px solid $color-default-white;
-        border-bottom: 1px solid $color-default-white;
-        transform: rotate(45deg);
-      }
-    }
-
-    input:disabled {
-      ~ span {
-        opacity: 0.5;
-        cursor: default;
-      }
-    }
   }
 
   .modal__element-error-text {

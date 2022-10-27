@@ -11,16 +11,16 @@ export const scrollToForm = () => {
       const breakpointChecker = () => {
         if (breakpointMobile.matches) {
           btn.addEventListener('click', () => {
-            animateScrollTo(form, {verticalOffset: -60, speed: 500});
+            animateScrollTo(form, {verticalOffset: -50, speed: 500});
           });
         } else {
           if (breakpointTablet.matches) {
             btn.addEventListener('click', () => {
-              animateScrollTo(form, {verticalOffset: -90, speed: 500});
+              animateScrollTo(form, {verticalOffset: -80, speed: 500});
             });
           } else {
             btn.addEventListener('click', () => {
-              animateScrollTo(form, {verticalOffset: -110, speed: 500});
+              animateScrollTo(form, {verticalOffset: -100, speed: 500});
             });
           }
         }

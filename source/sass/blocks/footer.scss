@@ -1,7 +1,10 @@
 .footer {
+  background-color: $color-black-pearl;
+}
+
+.footer__wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: $color-black-pearl;
   color: $color-default-white;
 
   @include vp-1023 {

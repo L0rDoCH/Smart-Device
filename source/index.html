@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Сайт компании Smart Device">
   <title>Smart Device</title>
   <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
-  <link rel="preload" href="js/main.js" as="script" crossorigin="anonymous">
+  <link rel="preload" href="js/main.min.js" as="script" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-bold.woff" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml"> <!--svg-->
@@ -79,10 +79,10 @@
 </svg>
 
 <div class="wrapper">
-  <header>
-    <div class="container header">
+  <header class="header">
+    <div class="container header__wrapper">
       <a class="header__logo-link">
-        <img class="header__logo" src="../img/svg/logo.svg" alt="Логотип компании Smart Device" width="215" height="55" loading="lazy">
+        <img class="header__logo" src="img/svg/logo.svg" alt="Логотип компании Smart Device" width="215" height="55" loading="lazy">
       </a>
       <ul class="header__contacts-list">
         <li class="header__item">
@@ -112,14 +112,16 @@
 
   <main>
     <h1 class="visually-hidden">Сайт компании Smart Device</h1>
-    <section class="top-section container">
-      <picture>
-        <source srcset="../img/title-bg.webp 1x, ../img/title-bg@2x.webp 2x" type="image/webp">
-        <img class="top-section__bg" src="../img/title-bg.jpg" srcset="../img/title-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1920" height="880" loading="lazy">
-      </picture>
-      <h2 class="top-section__title">Печатные платы</h2>
-      <p class="top-section__text">производство и&nbsp;монтаж, поставка комплектующих, <br>блоков и&nbsp;модулей</p>
-      <a class="btn top-section__btn" href="#feedback" data-mobile-text="бесплатная консультация">Получить бесплатную консультацию</a>
+    <section class="top-section">
+      <div class="top-section__wrapper container">
+        <picture>
+          <source srcset="img/title-bg.webp 1x, img/title-bg@2x.webp 2x" type="image/webp">
+          <img class="top-section__bg" src="img/title-bg.jpg" srcset="img/title-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1920" height="880" loading="lazy">
+        </picture>
+        <h2 class="top-section__title">Печатные платы</h2>
+        <p class="top-section__text">производство и&nbsp;монтаж, поставка комплектующих, <br>блоков и&nbsp;модулей</p>
+        <a class="btn top-section__btn" href="#feedback" data-mobile-text="бесплатная консультация">Получить бесплатную консультацию</a>
+      </div>
     </section>
 
     <section class="advantages container">
@@ -161,11 +163,11 @@
 
     <section class="about container">
       <picture>
-        <source srcset="../img/2022.webp 1x, ../img/2022@2x.webp 2x" type="image/webp">
-        <img src="../img/2022.png" srcset="../img/2022@2x.png 2x" alt="Надпись 2022" width="150" height="320" loading="lazy">
+        <source srcset="img/2022.webp 1x, img/2022@2x.webp 2x" type="image/webp">
+        <img src="img/2022.png" srcset="img/2022@2x.png 2x" alt="Надпись 2022" width="150" height="320" loading="lazy">
       </picture>
       <div class="about__wrapper">
-        <h2 class="about__title">О&nbsp;компании</h2>
+        <h2>О&nbsp;компании</h2>
         <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые
           технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.<br>
           <br>
@@ -181,94 +183,98 @@
         <button class="btn about__btn" data-open-text="Свернуть">Подробнее</button>
       </div>
     </section>
-    <section class="catalog container">
-      <h2 class="catalog__title" data-mobile-text="Товары и услуги Smart Device">Smart Device предлагает следующие товары и&nbsp;услуги</h2>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <a href="#">
-            <picture>
-              <source srcset="../img/card-bg.webp 1x, ../img/card-bg@2x.webp 2x" type="image/webp">
-              <img src="../img/card-bg.jpg" srcset="../img/card-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1494" height="818" loading="lazy">
-            </picture>
-            <p>Производство печатных плат</p>
-            <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="#card-arrow"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="catalog__item">
-          <a href="#">
-            <picture>
-              <source srcset="../img/card-bg.webp 1x, ../img/card-bg@2x.webp 2x" type="image/webp">
-              <img src="../img/card-bg.jpg" srcset="../img/card-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1494" height="818" loading="lazy">
-            </picture>
-            <p>Монтаж печатных плат</p>
-            <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="#card-arrow"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="catalog__item">
-          <a href="#">
-            <picture>
-              <source srcset="../img/card-bg.webp 1x, ../img/card-bg@2x.webp 2x" type="image/webp">
-              <img src="../img/card-bg.jpg" srcset="../img/card-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1494" height="818" loading="lazy">
-            </picture>
-            <p>Комплектующие для светотехники</p>
-            <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="#card-arrow"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+    <section class="catalog">
+      <div class="catalog__wrapper container">
+        <h2 class="catalog__title" data-mobile-text="Товары и услуги Smart Device">Smart Device предлагает следующие товары и&nbsp;услуги</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a href="#">
+              <picture>
+                <source srcset="img/card-bg.webp 1x, img/card-bg@2x.webp 2x" type="image/webp">
+                <img src="img/card-bg.jpg" srcset="img/card-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1494" height="818" loading="lazy">
+              </picture>
+              <p>Производство печатных плат</p>
+              <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="#card-arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="#">
+              <picture>
+                <source srcset="img/card-bg.webp 1x, img/card-bg@2x.webp 2x" type="image/webp">
+                <img src="img/card-bg.jpg" srcset="img/card-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1494" height="818" loading="lazy">
+              </picture>
+              <p>Монтаж печатных плат</p>
+              <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="#card-arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="#">
+              <picture>
+                <source srcset="img/card-bg.webp 1x, img/card-bg@2x.webp 2x" type="image/webp">
+                <img src="img/card-bg.jpg" srcset="img/card-bg@2x.jpg 2x" alt="Изображение материнской платы" width="1494" height="818" loading="lazy">
+              </picture>
+              <p>Комплектующие для светотехники</p>
+              <svg width="5" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="#card-arrow"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
-    <section class="feedback container" id="feedback">
-      <picture>
-        <source srcset="../img/feedback-form-image-desktop.webp 1x, ../img/feedback-form-image-desktop@2x.webp 2x" type="image/webp">
-        <img class="feedback__image-desktop" src="../img/feedback-form-image-desktop.png" srcset="../img/feedback-form-image-desktop@2x.png 2x" alt="Изображение бумажного самолетика" width="510" height="285" loading="lazy">
-      </picture>
-      <div class="feedback__wrapper">
-        <h2 class="feedback__title">Остались вопросы? Задайте их&nbsp;нам!</h2>
-        <p class="feedback__text">Мы&nbsp;проконсультируем Вас бесплатно</p>
-        <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
-          <div class="feedback__field feedback__element">
-            <label>
-              <span class="visually-hidden">Имя</span>
-              <input name="name" type="text" placeholder="Имя" data-pristine-required-message="*Обязательное поле" required>
-            </label>
-          </div>
-          <div class="feedback__field feedback__element">
-            <label>
-              <span class="visually-hidden">Телефон</span>
-              <input name="phone" type="tel" placeholder="Телефон" data-pristine-required-message="*Обязательное поле" data-pristine-error-message="*Номер телефона слишком короткий" required>
-            </label>
-          </div>
-          <div class="feedback__field feedback__field--textarea feedback__element">
-            <label>
-              <span class="visually-hidden">Ваш вопрос</span>
-              <textarea name="question" placeholder="Ваш вопрос"></textarea>
-            </label>
-          </div>
-          <button class="btn feedback__btn" type="submit">Задать вопрос</button>
-          <div class="feedback__control feedback__element">
-            <label>
-              <input class="visually-hidden" type="checkbox" name="agree" data-pristine-required-message="*Подтвердите свое согласие" required>
-              <span></span>
-              <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
-            </label>
-          </div>
-        </form>
+    <section class="feedback" id="feedback">
+      <div class="feedback__wrapper container">
+        <picture>
+          <source srcset="img/feedback-form-image-desktop.webp 1x, img/feedback-form-image-desktop@2x.webp 2x" type="image/webp">
+          <img class="feedback__image-desktop" src="img/feedback-form-image-desktop.png" srcset="img/feedback-form-image-desktop@2x.png 2x" alt="Изображение бумажного самолетика" width="510" height="285" loading="lazy">
+        </picture>
+        <div class="feedback__form-wrapper">
+          <h2 class="feedback__title">Остались вопросы? Задайте их&nbsp;нам!</h2>
+          <p class="feedback__text">Мы&nbsp;проконсультируем Вас бесплатно</p>
+          <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+            <div class="feedback__field feedback__element">
+              <label>
+                <span class="visually-hidden">Имя</span>
+                <input name="name" type="text" placeholder="Имя" data-pristine-required-message="*Обязательное поле" required>
+              </label>
+            </div>
+            <div class="feedback__field feedback__element">
+              <label>
+                <span class="visually-hidden">Телефон</span>
+                <input name="phone" type="tel" placeholder="Телефон" data-pristine-required-message="*Обязательное поле" data-pristine-error-message="*Номер телефона слишком короткий" required>
+              </label>
+            </div>
+            <div class="feedback__field feedback__field--textarea feedback__element">
+              <label>
+                <span class="visually-hidden">Ваш вопрос</span>
+                <textarea name="question" placeholder="Ваш вопрос"></textarea>
+              </label>
+            </div>
+            <button class="btn feedback__btn" type="submit">Задать вопрос</button>
+            <div class="feedback__control feedback__element">
+              <label>
+                <input class="visually-hidden" type="checkbox" name="agree" data-pristine-required-message="*Подтвердите свое согласие" required>
+                <span></span>
+                <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+              </label>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="footer container">
+  <footer class="footer">
+    <div class="footer__wrapper container">
       <div class="footer__logo-wrapper">
         <a class="footer__logo-link">
-          <img class="footer__logo" src="../img/svg/logo.svg" alt="Логотип компании Smart Device" width="215" height="55" loading="lazy">
+          <img class="footer__logo" src="img/svg/logo.svg" alt="Логотип компании Smart Device" width="215" height="55" loading="lazy">
         </a>
-        <div class="footer__social social">
+        <section class="footer__social social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <a class="social__link" href="#">
             <span class="visually-hidden">Мы в Одноклассниках</span>
@@ -288,7 +294,7 @@
               <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
             </svg>
           </a>
-        </div>
+        </section>
       </div>
       <nav class="footer__nav nav accordion">
         <h2 class="nav__title accordion__title">Разделы сайта</h2>
