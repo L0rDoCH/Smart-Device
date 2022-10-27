@@ -48,6 +48,7 @@
   position: relative;
   width: 100%;
   max-width: 510px;
+  background-color: $color-transparent;
   z-index: 1;
 
   @include vp-1023 {
@@ -115,6 +116,10 @@
     background-color: rgba(4, 20, 39, 0.15);
     border: none;
     border-radius: 3px;
+
+    &:hover {
+      background-color: rgba(4, 20, 39, 0.25);
+    }
 
     &::placeholder {
       color: $color-default-white;
@@ -211,6 +216,12 @@
     ~ span {
       opacity: 0.5;
       cursor: default;
+    }
+  }
+
+  input:hover {
+    ~ span {
+      opacity: 1;
     }
   }
 

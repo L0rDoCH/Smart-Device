@@ -32,4 +32,8 @@
 
 .nav__link {
   color: transparentize($color-default-white, 0.3);
+
+  &:hover {
+    color: $color-default-white;
+  }
 }
