@@ -9,18 +9,19 @@
 
   @include vp-767 {
     margin: 0;
-    padding: 20px 40px 18px 0;
+    padding: 23px 40px 22px 0;
   }
 }
 
 .contacts__wrapper {
   @include vp-767 {
+    margin-top: -7px;
     padding-bottom: 10px;
   }
 }
 
 .contacts__address {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-style: normal;
   color: transparentize($color-default-white, 0.3);
 
@@ -31,8 +32,12 @@
 
 .contacts__phone {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: transparentize($color-default-white, 0.3);
+
+  @include vp-767 {
+    margin-bottom: 11px;
+  }
 
   &:hover {
     color: $color-default-white;

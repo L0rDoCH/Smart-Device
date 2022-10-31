@@ -193,6 +193,7 @@
 
 .modal__control {
   position: relative;
+  order: 1;
 
   &:focus-within {
     label {

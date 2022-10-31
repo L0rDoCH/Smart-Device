@@ -1,5 +1,6 @@
 import {ScrollLock} from '../../utils/scroll-lock';
 import {FocusLock} from '../../utils/focus-lock';
+import {focusOnFirstFieldModal} from './focus-on-first-field-modal.js';
 
 export class Modals {
   constructor(settings = {}) {
@@ -152,6 +153,7 @@ export class Modals {
     this._setSettings(modalName);
     modal.classList.add('is-active');
 
+
     if (!this._openedModalElement) {
       this._scrollLock.disableScrolling();
     }
@@ -169,6 +171,8 @@ export class Modals {
       this._autoPlay(modal);
       document.addEventListener('click', this._documentClickHandler);
     }, this._eventTimeout);
+
+    focusOnFirstFieldModal(modal);
   }
 
   close(modalName = this._modalName) {
