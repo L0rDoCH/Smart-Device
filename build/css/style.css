@@ -1697,6 +1697,7 @@ button,
   }
 
   .header__contacts-list {
+    min-width: auto;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
